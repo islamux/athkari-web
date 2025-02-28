@@ -8,3 +8,9 @@ def home(request):
 def athkar_detail(request, athkar_id):
     athkar = Athkar.objects.get(id=athkar_id)
     return render(request, 'athkar_detail.html', {'athkar': athkar})
+
+def athkar_massa(request):
+    return render(request, 'athkar_massa.html')
+
+def athkar_sabah(request):
+    return render(request, 'athkar_sabah.html')
