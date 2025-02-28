@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         athkarDiv.classList.add('mb-4');
         athkarDiv.innerHTML = `
             <p class="text-lg mb-2">${athkar.text}</p>
-            <p class="text-sm text-gray-600">${athkar.footer}</p>
+            <p class="text-sm text-gray-600">${athkar.footer.replace('----\n', '----<br>')}</p>
         `;
         athkarContainer.appendChild(athkarDiv);
     });
